@@ -17,7 +17,7 @@
         return -1.0 + 2.0 * frac(sin(st) * 43758.5453123);
     }
 
-    float perlinNoise(fixed2 st) 
+    float perlin_noise(fixed2 st) 
     {
         fixed2 p = floor(st);
         fixed2 f = frac(st);
@@ -43,7 +43,7 @@
     float4 frag_update_position(v2f_img i) : SV_Target
     {
         float4 p = tex2D(_PositionBuffer, i.uv);
-        p.y = perlinNoise(fixed2(i.uv.x * 40, i.uv.y * 40 + _Time.x * 10)) * 10;
+        p.y = perlin_noise(fixed2(i.uv.x * 40, i.uv.y * 40 + _Time.x * 10)) * 10;
         return p;
     }
     ENDCG
