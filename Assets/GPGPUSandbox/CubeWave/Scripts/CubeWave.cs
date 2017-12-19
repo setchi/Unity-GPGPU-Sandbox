@@ -32,7 +32,7 @@ namespace UnityGpuSandbox.CubeWave
         RenderTexture CreateBuffer()
         {
             var width = bulkMesh.CopyCount;
-            var height = 1000;
+            var height = 320;
             var buffer = new RenderTexture(width, height, 0, RenderTextureFormat.ARGBFloat);
             buffer.hideFlags = HideFlags.DontSave;
             buffer.filterMode = FilterMode.Point;
@@ -51,7 +51,7 @@ namespace UnityGpuSandbox.CubeWave
         {
             if (bulkMesh == null)
             {
-                bulkMesh = new BulkMesh(shapes, 1000);
+                bulkMesh = new BulkMesh(shapes, 320);
             }
             else
             {

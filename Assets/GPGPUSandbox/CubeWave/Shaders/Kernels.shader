@@ -36,14 +36,14 @@
     float4 frag_init_position(v2f_img i) : SV_Target
     {
         i.uv -= 0.5;
-        i.uv *= 500;
+        i.uv *= 150;
         return float4(i.uv.x, 0, i.uv.y, 1);
     }
     
     float4 frag_update_position(v2f_img i) : SV_Target
     {
         float4 p = tex2D(_PositionBuffer, i.uv);
-        p.y = perlin_noise(fixed2(i.uv.x * 40, i.uv.y * 40 + _Time.x * 10)) * 10;
+        p.y = perlin_noise(fixed2(i.uv.x * 10, i.uv.y * 10 + _Time.x * 10)) * 10;
         return p;
     }
     ENDCG
