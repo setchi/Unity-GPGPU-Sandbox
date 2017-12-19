@@ -3,7 +3,7 @@ GPGPUを使った作品置き場です [English](https://translate.google.com/tr
 
 ## CubeWave
 10万個のキューブによる波です
-![cubewave](Documents/CubeWave.png)
+![cubewave](Documents/CubeWave.jpg)
 
 ## 開発環境
 Unity 2017.2.0f3
