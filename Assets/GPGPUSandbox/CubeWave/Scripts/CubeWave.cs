@@ -87,6 +87,15 @@ namespace UnityGpuSandbox.CubeWave
             Graphics.Blit(null, positionBuffer2, kernelMaterial, 1);
         }
 
+        void OnDestroy()
+        {
+            if (bulkMesh != null) bulkMesh.Release();
+            if (positionBuffer1) DestroyImmediate(positionBuffer1);
+            if (positionBuffer2) DestroyImmediate(positionBuffer2);
+            if (kernelMaterial) DestroyImmediate(kernelMaterial);
+            if (debugMaterial) DestroyImmediate(debugMaterial);
+        }
+
         void Update()
         {
             if (needsReset)
