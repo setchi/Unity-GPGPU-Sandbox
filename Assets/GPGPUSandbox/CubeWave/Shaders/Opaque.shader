@@ -4,8 +4,6 @@
     {
         [HideInInspector]
         _PositionBuffer ("-", 2D) = "black"{}
-        [HideInInspector]
-        _RotationBuffer ("-", 2D) = "red"{}
 
         _Metallic   ("Metalic", Range(0,1)) = 0.5
         _Smoothness ("Smoothness", Range(0,1)) = 0.5
@@ -33,7 +31,6 @@
         #pragma target 3.0
 
         sampler2D _PositionBuffer;
-        sampler2D _RotationBuffer;
         float2 _BufferOffset;
 
         half _Metallic;
