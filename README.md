@@ -6,7 +6,7 @@ GPGPUを使った作品置き場です [English](https://translate.google.com/tr
 ![cubewave](Documents/CubeWave.jpg)
 
 ## 開発環境
-Unity 2017.2.0f3
+Unity 2017.3.0f3
 
 ## LICENSE
 MIT
