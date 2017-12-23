@@ -2,9 +2,6 @@
 {
     Properties
     {
-        [HideInInspector]
-        _PositionBuffer ("-", 2D) = "black"{}
-
         _Metallic   ("Metalic", Range(0,1)) = 0.5
         _Smoothness ("Smoothness", Range(0,1)) = 0.5
 

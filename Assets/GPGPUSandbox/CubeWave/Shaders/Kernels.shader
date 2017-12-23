@@ -1,10 +1,5 @@
 ﻿Shader "UnityGpuSandbox/CubeWave/Kernels"
 {
-    Properties
-    {
-        _PositionBuffer ("-", 2D) = ""{}
-    }
-
     CGINCLUDE
 
     #include "UnityCG.cginc"
