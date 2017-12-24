@@ -53,17 +53,20 @@
             return float4(1, 0, 0, 1);
         }
 
-        if (distance_exp < near) {
+        if (distance_exp < near)
+        {
             return float4(0, 0, 0, 1);
         }
 
-        if (distance_exp < mid) {
+        if (distance_exp < mid)
+        {
             return lerp(float4(1, 1, 1, 1) * 0.7,
                         float4(0, 0, 1, 1) * 0.5,
                         smoothstep(0, player_distance + enemy_distance_exp, player_distance));
         }
 
-        if (distance_exp < far) {
+        if (distance_exp < far)
+        {
             return lerp(float4(1, 1, 1, 1) * 1,
                         float4(0, 1, 1, 1) * 0.5,
                         smoothstep(0, player_distance + enemy_distance_exp, player_distance));
