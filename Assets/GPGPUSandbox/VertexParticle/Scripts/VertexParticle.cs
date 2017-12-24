@@ -2,9 +2,9 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace UnityGpuSandbox.CurveNoiseParticle
+namespace UnityGpuSandbox.VertexParticle
 {
-    public partial class CurveNoiseParticle : MonoBehaviour
+    public partial class VertexParticle : MonoBehaviour
     {
         [SerializeField]
         Shader kernelShader;

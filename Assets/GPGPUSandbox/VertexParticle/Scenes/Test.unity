@@ -123,7 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 176167111}
   m_Layer: 0
-  m_Name: Camera Pivot 1 1 1 1
+  m_Name: Camera Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 1371975493}
   - component: {fileID: 1371975494}
   m_Layer: 0
-  m_Name: CurveNoiseParticle
+  m_Name: VertexParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

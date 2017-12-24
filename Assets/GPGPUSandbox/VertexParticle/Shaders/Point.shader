@@ -1,4 +1,4 @@
-﻿Shader "UnityGpuSandbox/CurveNoiseParticle/Point"
+﻿Shader "UnityGpuSandbox/VertexParticle/Point"
 {
     CGINCLUDE
     #include "UnityCG.cginc"

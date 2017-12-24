@@ -1,4 +1,4 @@
-﻿Shader "UnityGpuSandbox/CurveNoiseParticle/Kernels"
+﻿Shader "UnityGpuSandbox/VertexParticle/Kernels"
 {
     CGINCLUDE
 
