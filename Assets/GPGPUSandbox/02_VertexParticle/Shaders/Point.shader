@@ -7,7 +7,6 @@
 
     struct appdata
     {
-        uint id : SV_VertexID;
         float4 v : POSITION;
         float4 color: COLOR;
     };
